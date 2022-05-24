@@ -55,7 +55,7 @@ class ThreadingSimpleServer(ThreadingMixIn, HTTPServer):
 CWD = os.getcwd()
 
 server = ThreadingSimpleServer((attackerip, httpport), SimpleHTTPRequestHandler)
-print("Serving HTTP traffic from", CWD, "on", attackerip, "using port", httpport, "in background")
+print("[✔] Serving HTTP traffic from", CWD, "on", attackerip, "using port", httpport, "in background")
 thread = threading.Thread(target = server.serve_forever)
 thread.daemon = True
 thread.start()
