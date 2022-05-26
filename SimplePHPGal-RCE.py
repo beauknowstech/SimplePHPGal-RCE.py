@@ -10,6 +10,7 @@
 # CVE: N/A
 # Tested using python 3.9.9
 # Original finding: https://www.exploit-db.com/exploits/48424
+# This should be used for educational purposes only. Don't forget to forward/allow attackerport/httpport ports. 
 
 import argparse
 import os
