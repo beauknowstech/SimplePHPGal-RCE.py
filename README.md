@@ -20,7 +20,7 @@ positional arguments:
   attackerip           Kali IP address for reverse shell and http server
   
   attackerport         Port for the reverse shell.
-
+### You may need to change the port to something other than 4444 maybe try ports that the machine has open.
 
 optional arguments:
 
